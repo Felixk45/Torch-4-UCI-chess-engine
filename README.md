@@ -32,6 +32,7 @@ The repository already includes a portable Node.js runtime.
 ```text
 torch/
 ├─ torch.bat
+├─ torch.exe
 ├─ node.exe
 ├─ torch-4-9f8ccc7.js
 ├─ torch-4-9f8ccc7-part-0.wasm
@@ -51,8 +52,16 @@ Add a new UCI engine with:
 **Command:**
 
 ```text
+torch.exe
+```
+
+or
+
+```text
 torch.bat
 ```
+
+torch.exe should be compatible with any chess gui, torch.bat can be used in some GUIs like CuteChess. There is no performance difference between the two.
 
 Do **not** select:
 
@@ -68,7 +77,7 @@ torch-4-9f8ccc7.js
 
 directly.
 
-The batch file automatically launches the engine with the correct Node.js runtime and parameters.
+The batch or exe file automatically launches the engine with the correct Node.js runtime and parameters.
 
 ## Notes
 
