@@ -31,4 +31,6 @@
 ::
 ::
 ::978f952a14a936cc963da21a135fa983
-node.exe torch-4-9f8ccc7.js
+
+@echo off
+"%~dp0node.exe" "%~dp0torch-4-9f8ccc7.js"
